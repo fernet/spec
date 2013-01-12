@@ -4,7 +4,7 @@ fernet acceptance tests
 generate.json
 
 	contains all parameters needed to determinstically generate
-	a fernet token, as well as token that should be generated.
+	a fernet token, as well as the token that should be generated.
 
 	Src: payload to be encrypted
 	IV: 16-byte IV to use for encryption

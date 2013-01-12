@@ -35,7 +35,7 @@
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "desc": "far-future TS",
+    "desc": "far-future TS (unacceptable clock skew)",
     "token": "M0oOEQn9ZTWz212mKeX0qRyi7-wYxJFfsmDMhRazEeAAAAAAVigfvAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
     "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
@@ -54,12 +54,5 @@
     "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
-  },
-  {
-    "desc": "zero-value key",
-    "token": "FcrjzZRmwcQIuBDcGCh8nGUB8ZD_mXxjqhMln9aIraAAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8kMx7cZZDiiNuT9qRo32pg",
-    "ttlns": 6e+10,
-    "now": "1985-10-26T01:20:01-07:00",
-    "secret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   }
 ]

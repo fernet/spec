@@ -1,9 +1,9 @@
 [
   {
-    "Token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Src": "hello",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "src": "hello",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   }
 ]

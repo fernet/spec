@@ -1,65 +1,65 @@
 [
   {
-    "Desc": "incorrect mac",
-    "Token": "rn9hs9yS0GVWjk4hH822VIwQUWz-_WZWCLzsD7SgV2IAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "incorrect mac",
+    "token": "rn9hs9yS0GVWjk4hH822VIwQUWz-_WZWCLzsD7SgV2IAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "too short",
+    "desc": "too short",
     "Token": "91GVdgz7jmWR6vJiViEA4u-LhVMhCSr87INSeFwwkYAAAAAAHcCesAABAgMEBQYHCAkKCw==",
     "TTLns": 6e+10,
     "Now": "1985-10-26T01:20:01-07:00",
     "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "invalid base64",
-    "Token": "%%%%%%%%%%%j-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "invalid base64",
+    "token": "%%%%%%%%%%%j-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "payload size not multiple of block size",
-    "Token": "r-pDJRzyfnW4rYfh-gZek3qA3lnFG8fGaf0qgmZlPL8AAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOAQ=",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "payload size not multiple of block size",
+    "token": "r-pDJRzyfnW4rYfh-gZek3qA3lnFG8fGaf0qgmZlPL8AAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOAQ=",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "payload padding error",
-    "Token": "ApoqRxzlU8Z9-mPSV6ufXeIgKugRjI_-ugnnqqoCTjQAAAAAHcCesAABAgMEBQYHCAkKCwwNDg91rx5fbHkRnpZBxpOuEAjd",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "payload padding error",
+    "token": "ApoqRxzlU8Z9-mPSV6ufXeIgKugRjI_-ugnnqqoCTjQAAAAAHcCesAABAgMEBQYHCAkKCwwNDg91rx5fbHkRnpZBxpOuEAjd",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "far-future TS",
-    "Token": "M0oOEQn9ZTWz212mKeX0qRyi7-wYxJFfsmDMhRazEeAAAAAAVigfvAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "far-future TS",
+    "token": "M0oOEQn9ZTWz212mKeX0qRyi7-wYxJFfsmDMhRazEeAAAAAAVigfvAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "expired TTL",
-    "Token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:21:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "expired TTL",
+    "token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:21:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "incorrect IV (causes padding error)",
-    "Token": "fe5sCHPyF13H837yvtc65xAlWfXXP3fEUX_jMiB74EwAAAAAHcCesHV0d3ZxcHNyfXx_fnl4e3otNtXKRlVimf3hMAhjOASy",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "desc": "incorrect IV (causes padding error)",
+    "token": "fe5sCHPyF13H837yvtc65xAlWfXXP3fEUX_jMiB74EwAAAAAHcCesHV0d3ZxcHNyfXx_fnl4e3otNtXKRlVimf3hMAhjOASy",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
-    "Desc": "zero-value key",
-    "Token": "FcrjzZRmwcQIuBDcGCh8nGUB8ZD_mXxjqhMln9aIraAAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8kMx7cZZDiiNuT9qRo32pg",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    "desc": "zero-value key",
+    "token": "FcrjzZRmwcQIuBDcGCh8nGUB8ZD_mXxjqhMln9aIraAAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8kMx7cZZDiiNuT9qRo32pg",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   }
 ]

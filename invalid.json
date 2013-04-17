@@ -1,56 +1,56 @@
 [
   {
     "desc": "incorrect mac",
-    "token": "rn9hs9yS0GVWjk4hH822VIwQUWz-_WZWCLzsD7SgV2IAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAl1-szkFVzXTuGb4hR8AKtwcaX1YdykQUFBQUFBQUFBQQ==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "too short",
-    "token": "91GVdgz7jmWR6vJiViEA4u-LhVMhCSr87INSeFwwkYAAAAAAHcCesAABAgMEBQYHCAkKCw==",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPA==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "invalid base64",
-    "token": "%%%%%%%%%%%j-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAl1-szkFVzXTuGb4hR8AKtwcaX1YdykRtfsH-p1YsUD2Q==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "payload size not multiple of block size",
-    "token": "r-pDJRzyfnW4rYfh-gZek3qA3lnFG8fGaf0qgmZlPL8AAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOAQ=",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPOm73QeoCk9uGib28Xe5vz6oxq5nmxbx_v7mrfyudzUm",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "payload padding error",
-    "token": "ApoqRxzlU8Z9-mPSV6ufXeIgKugRjI_-ugnnqqoCTjQAAAAAHcCesAABAgMEBQYHCAkKCwwNDg91rx5fbHkRnpZBxpOuEAjd",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0ODz4LEpdELGQAad7aNEHbf-JkLPIpuiYRLQ3RtXatOYREu2FWke6CnJNYIbkuKNqOhw==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "far-future TS (unacceptable clock skew)",
-    "token": "M0oOEQn9ZTWz212mKeX0qRyi7-wYxJFfsmDMhRazEeAAAAAAVigfvAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "token": "gAAAAAAdwStRAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAnja1xKYyhd-Y6mSkTOyTGJmw2Xc2a6kBd-iX9b_qXQcw==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "expired TTL",
-    "token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
+    "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAl1-szkFVzXTuGb4hR8AKtwcaX1YdykRtfsH-p1YsUD2Q==",
     "now": "1985-10-26T01:21:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "incorrect IV (causes padding error)",
-    "token": "fe5sCHPyF13H837yvtc65xAlWfXXP3fEUX_jMiB74EwAAAAAHcCesHV0d3ZxcHNyfXx_fnl4e3otNtXKRlVimf3hMAhjOASy",
+    "token": "gAAAAAAdwJ7tBQECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAmJMpj24-xWr3DNCuKaEkAdxyXTJjUI6D27f5-HNTO3Eg==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="

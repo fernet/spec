@@ -8,10 +8,10 @@
   },
   {
     "desc": "too short",
-    "Token": "91GVdgz7jmWR6vJiViEA4u-LhVMhCSr87INSeFwwkYAAAAAAHcCesAABAgMEBQYHCAkKCw==",
-    "TTLns": 6e+10,
-    "Now": "1985-10-26T01:20:01-07:00",
-    "Secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "token": "91GVdgz7jmWR6vJiViEA4u-LhVMhCSr87INSeFwwkYAAAAAAHcCesAABAgMEBQYHCAkKCw==",
+    "ttlns": 6e+10,
+    "now": "1985-10-26T01:20:01-07:00",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "invalid base64",

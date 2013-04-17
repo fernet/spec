@@ -18,7 +18,7 @@ All encryption in this version is done with AES 128 in CBC mode.
 A fernet *key* is the URL-safe base-64 encoding of the following
 fields:
 
-    Signing-key + Encryption-key
+    Signing-key || Encryption-key
 
 - *Signing-key*, 16 bytes
 - *Encryption-key*, 16 bytes
@@ -28,7 +28,7 @@ fields:
 A fernet *token* is the URL-safe base-64 encoding of the
 concatenation of the following fields:
 
-    Version + Timestamp + IV + Ciphertext + HMAC
+    Version || Timestamp || IV || Ciphertext || HMAC
 
 - *Version*, 1 byte
 - *Timestamp*, 8 bytes
@@ -74,7 +74,7 @@ padded and encrypted.
 This field is the 32-byte SHA256 HMAC, under signing-key, of the
 concatenation of the following fields:
 
-    Version + Timestamp + IV + Ciphertext
+    Version || Timestamp || IV || Ciphertext
 
 Note that the HMAC input is the entire rest of the token verbatim,
 and that this input is not encoded with base 64.

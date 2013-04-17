@@ -19,7 +19,7 @@ verify.json
 	verify it.
 
 	token: token to be verified
-	ttlns: time-to-live in nanoseconds
+	ttl_sec: time-to-live in seconds
 	now: current time of the verifying process
 	secret: base64-encoded 32-byte key to use for signing and decryption
 	src: unencrypted payload to be retrieved from the token
@@ -33,6 +33,6 @@ invalid.json
 
 	desc: reason why the token is invalid
 	token: invalid token
-	ttlns: time-to-live in nanoseconds
+	ttl_sec: time-to-live in seconds
 	now: current time of the verifying process
 	secret: base64-encoded 32-byte key to use for signing and decryption

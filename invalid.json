@@ -2,57 +2,57 @@
   {
     "desc": "incorrect mac",
     "token": "rn9hs9yS0GVWjk4hH822VIwQUWz-_WZWCLzsD7SgV2IAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "too short",
     "token": "91GVdgz7jmWR6vJiViEA4u-LhVMhCSr87INSeFwwkYAAAAAAHcCesAABAgMEBQYHCAkKCw==",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "invalid base64",
     "token": "%%%%%%%%%%%j-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "payload size not multiple of block size",
     "token": "r-pDJRzyfnW4rYfh-gZek3qA3lnFG8fGaf0qgmZlPL8AAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOAQ=",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "payload padding error",
     "token": "ApoqRxzlU8Z9-mPSV6ufXeIgKugRjI_-ugnnqqoCTjQAAAAAHcCesAABAgMEBQYHCAkKCwwNDg91rx5fbHkRnpZBxpOuEAjd",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "far-future TS (unacceptable clock skew)",
     "token": "M0oOEQn9ZTWz212mKeX0qRyi7-wYxJFfsmDMhRazEeAAAAAAVigfvAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "expired TTL",
     "token": "2woUxqnnpRAj-ztUarjDIfllJBmLiBMjfcmZesHVIhcAAAAAHcCesAABAgMEBQYHCAkKCwwNDg8tNtXKRlVimf3hMAhjOASy",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:21:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "incorrect IV (causes padding error)",
     "token": "fe5sCHPyF13H837yvtc65xAlWfXXP3fEUX_jMiB74EwAAAAAHcCesHV0d3ZxcHNyfXx_fnl4e3otNtXKRlVimf3hMAhjOASy",
-    "ttlns": 6e+10,
     "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   }
 ]

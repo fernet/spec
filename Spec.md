@@ -11,6 +11,8 @@ that can't be read or altered without the key.
 To facilitate convenient interoperability, this spec defines the
 external format of both tokens and keys.
 
+All encryption in this version is done with AES 128 in CBC mode.
+
 ## Key Format
 
 A fernet *key* is the URL-safe base-64 encoding of the following
@@ -87,8 +89,8 @@ following steps, in order:
 3. Construct the ciphertext:
    1. Pad the message to a multiple of 16 bytes using PKCS #7
    standard block padding.
-   2. Encrypt the padded message using AES-128 with the chosen IV
-   and user-supplied encryption-key.
+   2. Encrypt the padded message using AES 128 in CBC mode with
+   the chosen IV and user-supplied encryption-key.
 4. Compute the HMAC field as described above using the
 user-supplied signing-key.
 5. Concatenate all fields together in the format above.
@@ -108,6 +110,6 @@ token, using a constant-time comparison function.
 4. If the user has specified a maximum age (or "time-to-live") for
 the token, ensure the recorded timestamp is not too far in the
 past.
-5. Decrypt the ciphertext field using the IV and user-supplied
-encryption-key.
+5. Decrypt the ciphertext field using AES 128 in CBC mode with the
+recorded IV and user-supplied encryption-key.
 6. Unpad the decrypted plaintext, yielding the original message.

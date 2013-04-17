@@ -4,7 +4,7 @@ This document describes version 0x80 (currently the only
 version) of the fernet format.
 
 Conceptually, fernet takes a user-provided *message* (an arbitrary
-sequence of bytes), a *key* (32 bytes of entropy), and the current
+sequence of bytes), a *key* (256 bits of entropy), and the current
 time, and produces a *token*, which contains the message in a form
 that can't be read or altered without the key.
 
@@ -20,8 +20,8 @@ fields:
 
     Signing-key || Encryption-key
 
-- *Signing-key*, 16 bytes
-- *Encryption-key*, 16 bytes
+- *Signing-key*, 128 bits
+- *Encryption-key*, 128 bits
 
 ## Token Format
 
@@ -30,11 +30,11 @@ concatenation of the following fields:
 
     Version || Timestamp || IV || Ciphertext || HMAC
 
-- *Version*, 1 byte
-- *Timestamp*, 8 bytes
-- *IV*, 16 bytes
-- *Ciphertext*, variable length, multiple of 16 bytes
-- *HMAC*, 32 bytes
+- *Version*, 8 bits
+- *Timestamp*, 64 bits
+- *IV*, 128 bits
+- *Ciphertext*, variable length, multiple of 128 bits
+- *HMAC*, 256 bits
 
 Fernet tokens are not self-delimiting. It is assumed that the
 transport will provide a means of finding the length of each
@@ -56,7 +56,7 @@ the token was created.
 
 ### IV
 
-The 16-byte Initialization Vector used in AES encryption and
+The 128-bit Initialization Vector used in AES encryption and
 decryption of the Ciphertext.
 
 When generating new fernet tokens, the IV must be chosen uniquely
@@ -65,13 +65,13 @@ probability.
 
 ### Ciphertext
 
-This field has variable size, but is always a multiple of 16
-bytes, the AES block size. It contains the original input message,
+This field has variable size, but is always a multiple of 128
+bits, the AES block size. It contains the original input message,
 padded and encrypted.
 
 ### HMAC
 
-This field is the 32-byte SHA256 HMAC, under signing-key, of the
+This field is the 256-bit SHA256 HMAC, under signing-key, of the
 concatenation of the following fields:
 
     Version || Timestamp || IV || Ciphertext
@@ -87,8 +87,8 @@ following steps, in order:
 1. Record the current time for the timestamp field.
 2. Choose a unique IV.
 3. Construct the ciphertext:
-   1. Pad the message to a multiple of 16 bytes using PKCS #7
-   standard block padding.
+   1. Pad the message to a multiple of 16 bytes (128 bits) using
+   PKCS #7 standard block padding.
    2. Encrypt the padded message using AES 128 in CBC mode with
    the chosen IV and user-supplied encryption-key.
 4. Compute the HMAC field as described above using the

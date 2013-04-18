@@ -13,6 +13,10 @@ external format of both tokens and keys.
 
 All encryption in this version is done with AES 128 in CBC mode.
 
+All base 64 encoding is done with the "URL and Filename Safe"
+variant defined in RFC 4648:
+http://tools.ietf.org/html/rfc4648#section-5
+
 ## Key Format
 
 A fernet *key* is the URL-safe base-64 encoding of the following

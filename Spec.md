@@ -103,13 +103,14 @@ recover the original message, perform the following steps, in
 order:
 
 1. Base-64 decode the token.
-2. Recompute the HMAC from the other fields and the user-supplied
+2. Ensure the first byte of the token is 0x80.
+3. Recompute the HMAC from the other fields and the user-supplied
 signing-key.
-3. Ensure the recomputed HMAC matches the HMAC field stored in the
+4. Ensure the recomputed HMAC matches the HMAC field stored in the
 token, using a constant-time comparison function.
-4. If the user has specified a maximum age (or "time-to-live") for
+5. If the user has specified a maximum age (or "time-to-live") for
 the token, ensure the recorded timestamp is not too far in the
 past.
-5. Decrypt the ciphertext field using AES 128 in CBC mode with the
+6. Decrypt the ciphertext field using AES 128 in CBC mode with the
 recorded IV and user-supplied encryption-key.
-6. Unpad the decrypted plaintext, yielding the original message.
+7. Unpad the decrypted plaintext, yielding the original message.

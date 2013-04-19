@@ -44,13 +44,13 @@
   {
     "desc": "expired TTL",
     "token": "gAAAAAAdwJ6xAAECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAl1-szkFVzXTuGb4hR8AKtwcaX1YdykRtfsH-p1YsUD2Q==",
-    "now": "1985-10-26T01:21:01-07:00",
+    "now": "1985-10-26T01:21:31-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   },
   {
     "desc": "incorrect IV (causes padding error)",
-    "token": "gAAAAAAdwJ7tBQECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAmJMpj24-xWr3DNCuKaEkAdxyXTJjUI6D27f5-HNTO3Eg==",
+    "token": "gAAAAAAdwJ6xBQECAwQFBgcICQoLDA0OD3HkMATM5lFqGaerZ-fWPAkLhFLHpGtDBRLRTZeUfWgHSv49TF2AUEZ1TIvcZjK1zQ==",
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="

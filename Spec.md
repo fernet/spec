@@ -64,8 +64,8 @@ The 128-bit Initialization Vector used in AES encryption and
 decryption of the Ciphertext.
 
 When generating new fernet tokens, the IV must be chosen uniquely
-for every token. Random selection will do this with high
-probability.
+for every token. With a high-quality source of entropy, random
+selection will do this with high probability.
 
 ### Ciphertext
 

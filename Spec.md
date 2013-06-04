@@ -4,7 +4,7 @@ This document describes version 0x80 (currently the only
 version) of the fernet format.
 
 Conceptually, fernet takes a user-provided *message* (an arbitrary
-sequence of bytes), a *key* (256 bits of entropy), and the current
+sequence of bytes), a *key* (256 bits), and the current
 time, and produces a *token*, which contains the message in a form
 that can't be read or altered without the key.
 

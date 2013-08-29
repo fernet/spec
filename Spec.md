@@ -91,8 +91,13 @@ following steps, in order:
 1. Record the current time for the timestamp field.
 2. Choose a unique IV.
 3. Construct the ciphertext:
-   1. Pad the message to a multiple of 16 bytes (128 bits) using
-   PKCS #7 standard block padding.
+   1. Pad the message to a multiple of 16 bytes (128 bits) per [RFC
+   5652, section 6.3](http://tools.ietf.org/html/rfc5652#section-6.3).
+   This is the same padding technique used in [PKCS #7
+   v1.5](http://tools.ietf.org/html/rfc2315#section-10.3) and all
+   versions of SSL/TLS (cf. [RFC 5246, section
+   6.2.3.2](http://tools.ietf.org/html/rfc5246#section-6.2.3.2) for
+   TLS 1.2).
    2. Encrypt the padded message using AES 128 in CBC mode with
    the chosen IV and user-supplied encryption-key.
 4. Compute the HMAC field as described above using the
@@ -108,13 +113,13 @@ order:
 
 1. Base-64 decode the token.
 2. Ensure the first byte of the token is 0x80.
-3. Recompute the HMAC from the other fields and the user-supplied
-signing-key.
-4. Ensure the recomputed HMAC matches the HMAC field stored in the
-token, using a constant-time comparison function.
-5. If the user has specified a maximum age (or "time-to-live") for
+3. If the user has specified a maximum age (or "time-to-live") for
 the token, ensure the recorded timestamp is not too far in the
 past.
+4. Recompute the HMAC from the other fields and the user-supplied
+signing-key.
+5. Ensure the recomputed HMAC matches the HMAC field stored in the
+token, using a constant-time comparison function.
 6. Decrypt the ciphertext field using AES 128 in CBC mode with the
 recorded IV and user-supplied encryption-key.
 7. Unpad the decrypted plaintext, yielding the original message.

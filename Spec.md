@@ -27,6 +27,9 @@ fields:
 - *Signing-key*, 128 bits
 - *Encryption-key*, 128 bits
 
+Fernet keys are URL-safe base-64 encoded to ease their management,
+they must be decoded and split into their component parts before use.
+
 ## Token Format
 
 A fernet *token* is the URL-safe base-64 encoding of the

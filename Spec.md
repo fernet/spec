@@ -14,12 +14,11 @@ external format of both tokens and keys.
 All encryption in this version is done with AES 128 in CBC mode.
 
 All base 64 encoding is done with the "URL and Filename Safe"
-variant defined in RFC 4648:
-http://tools.ietf.org/html/rfc4648#section-5
+variant, defined in [RFC 4648](http://tools.ietf.org/html/rfc4648#section-5) as "base64url".
 
 ## Key Format
 
-A fernet *key* is the URL-safe base-64 encoding of the following
+A fernet *key* is the base64url encoding of the following
 fields:
 
     Signing-key ‖ Encryption-key
@@ -29,7 +28,7 @@ fields:
 
 ## Token Format
 
-A fernet *token* is the URL-safe base-64 encoding of the
+A fernet *token* is the base64url encoding of the
 concatenation of the following fields:
 
     Version ‖ Timestamp ‖ IV ‖ Ciphertext ‖ HMAC
@@ -81,7 +80,7 @@ concatenation of the following fields:
     Version ‖ Timestamp ‖ IV ‖ Ciphertext
 
 Note that the HMAC input is the entire rest of the token verbatim,
-and that this input is not encoded with base 64.
+and that this input is *not* base64url encoded.
 
 ## Generating
 
@@ -103,7 +102,7 @@ following steps, in order:
 4. Compute the HMAC field as described above using the
 user-supplied signing-key.
 5. Concatenate all fields together in the format above.
-6. Base-64 encode the entire token.
+6. base64url encode the entire token.
 
 ## Verifying
 
@@ -111,7 +110,7 @@ Given a key and token, to verify that the token is valid and
 recover the original message, perform the following steps, in
 order:
 
-1. Base-64 decode the token.
+1. base64url decode the token.
 2. Ensure the first byte of the token is 0x80.
 3. If the user has specified a maximum age (or "time-to-live") for
 the token, ensure the recorded timestamp is not too far in the

@@ -3,7 +3,7 @@ fernet acceptance tests
 
 generate.json
 
-	contains all parameters needed to determinstically generate
+	contains all parameters needed to deterministically generate
 	a fernet token, as well as the token that should be generated.
 
 	src: payload to be encrypted
@@ -15,7 +15,7 @@ generate.json
 
 verify.json
 
-	contains a valid token and all parameters needed to determistically
+	contains a valid token and all parameters needed to deterministically
 	verify it.
 
 	token: token to be verified

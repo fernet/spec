@@ -54,5 +54,26 @@
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+  },
+  {
+    "desc": "trailing characters after b64 padding",
+    "token": "gAAAAAAdwJ6wAAECAwQFBgcICQoLDA0ODy021cpGVWKZ_eEwCGM4BLLF_5CV9dOPmrhuVUPgJobwOz7JcbmrR64jVmpU4IwqDA==trailingdata",
+    "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+  },
+  {
+    "desc": "invalid characters in b64",
+    "token": "*gAAAAAAdwJ6wAAECAwQFBgcI!CQoLDA0ODy021?cpGVWKZ_eEwC@GM4BLLF_5CV9dOPmrhuVUPgJobwOz7JcbmrR64jVmpU4IwqDA==",
+    "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+  },
+  {
+    "desc": "invalid non-urlsafe characters in b64",
+    "token": "gAAAAAAdwJ6wAAEC/AwQFBgcICQoLDA0ODy+021cpGVWKZ_eEwCGM4BLLF_5CV9dOPmrhuVUPgJobwOz7JcbmrR64jVmpU4IwqDA==",
+    "now": "1985-10-26T01:20:01-07:00",
+    "ttl_sec": 60,
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
   }
 ]

@@ -58,6 +58,9 @@ Currently there is only one version defined, with the value 128 (0x80).
 This field is a 64-bit unsigned big-endian integer. It records the number of
 seconds elapsed between January 1, 1970 UTC and the time the token was created.
 
+*Changed in version 0x81*: Instead of elapsed seconds, it records the number of
+elapsed microseconds.
+
 ### IV
 
 The 128-bit Initialization Vector used in AES encryption and decryption of the

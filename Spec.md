@@ -1,7 +1,8 @@
 # Fernet Spec
 
-This document describes version 0x80 (currently the only version) of the fernet
-format.
+This document describes both version 0x80 (the first version) and 0x81 (the
+second version) of the fernet format. Differences between each variant is
+explained inline.
 
 Conceptually, fernet takes a user-provided *message* (an arbitrary sequence of
 bytes), a *key* (256 bits), and the current time, and produces a *token*, which

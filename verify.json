@@ -4,6 +4,15 @@
     "now": "1985-10-26T01:20:01-07:00",
     "ttl_sec": 60,
     "src": "hello",
-    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4="
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4=",
+    "version": 128
+  },
+  {
+    "token": "TODO",
+    "now": "1985-10-26T01:20:01-07:00.123456",
+    "ttl_sec": 60,
+    "src": "hello",
+    "secret": "cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4=",
+    "version": 129
   }
 ]

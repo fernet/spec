@@ -155,6 +155,7 @@ implementation.
     encryption
   - `now`: time to be used for the timestamp in the generated token
   - `token`: value of the token that should be generated
+  - `version`: the version of the fernet format as an integer
 
 - `verify.json`
 
@@ -169,6 +170,7 @@ implementation.
   - `secret`: URL-safe base64-encoded 32-byte key to use for signing and
     decryption
   - `src`: unencrypted payload to be retrieved from the token
+  - `version`: the version of the fernet format as an integer
 
 - `invalid.json`
 
@@ -183,3 +185,4 @@ implementation.
   - `now`: current time of the verifying process
   - `secret`: URL-safe base64-encoded 32-byte key to use for signing and
     decryption
+  - `version`: the version of the fernet format as an integer

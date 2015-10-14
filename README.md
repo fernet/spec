@@ -1,7 +1,7 @@
 # Fernet Spec
 
 This document describes both version 0x80 (the first version) and 0x81 (the
-second version) of the fernet format. Differences between each variant is
+second version) of the fernet format. The differences between each version are
 explained inline.
 
 Conceptually, fernet takes a user-provided *message* (an arbitrary sequence of

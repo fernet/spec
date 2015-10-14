@@ -136,3 +136,50 @@ a constant-time comparison function.
 and user-supplied encryption-key.
 
 7. Unpad the decrypted plaintext, yielding the original message.
+
+## Acceptance tests
+
+This repository contains the following files which can be used to test your
+implementation.
+
+- `generate.json`
+
+  Contains all parameters needed to deterministically generate a fernet token,
+  as well as the token that should be generated.
+
+  Each object contains the following fields:
+
+  - `src`: payload to be encrypted
+  - `iv`: 16-byte IV to use for encryption
+  - `secret`: URL-safe base64-encoded 32-byte key to use for signing and
+    encryption
+  - `now`: time to be used for the timestamp in the generated token
+  - `token`: value of the token that should be generated
+
+- `verify.json`
+
+  Contains a valid token and all parameters needed to deterministically verify
+  it.
+
+  Each object contains the following fields:
+
+  - `token`: token to be verified
+  - `ttl_sec`: time-to-live in seconds
+  - `now`: current time of the verifying process
+  - `secret`: URL-safe base64-encoded 32-byte key to use for signing and
+    decryption
+  - `src`: unencrypted payload to be retrieved from the token
+
+- `invalid.json`
+
+  Contains parameters for verification and a token that is invalid under those
+  parameters, as well as a description of why the token is invalid.
+
+  Each object contains the following fields:
+
+  - `desc`: reason why the token is invalid
+  - `token`: invalid token
+  - `ttl_sec`: time-to-live in seconds
+  - `now`: current time of the verifying process
+  - `secret`: URL-safe base64-encoded 32-byte key to use for signing and
+    decryption

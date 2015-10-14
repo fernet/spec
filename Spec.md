@@ -50,8 +50,9 @@ provide a means of finding the length of each complete fernet token.
 
 ### Version
 
-This field denotes which version of the format is being used by the token.
-Currently there is only one version defined, with the value 128 (0x80).
+This field denotes which version of the format is being used by the token. For
+example, the first version uses the value 128 (0x80) and the second version
+uses the value 129 (0x81).
 
 ### Timestamp
 
@@ -120,7 +121,7 @@ original message, perform the following steps, in order:
 
 1. base64url decode the token.
 
-2. Ensure the first byte of the token is 0x80.
+2. Ensure the first byte of the token is either 0x80 or 0x81.
 
 3. If the user has specified a maximum age (or "time-to-live") for the token,
 ensure the recorded timestamp is not too far in the past.

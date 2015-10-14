@@ -8,7 +8,7 @@ generate.json
 
 	src: payload to be encrypted
 	iv: 16-byte IV to use for encryption
-	secret: base64-encoded 32-byte key to use for signing and encryption
+	secret: URL-safe base64-encoded 32-byte key to use for signing and encryption
 	now: time to be used for the timestamp in the generated token
 	token: value of the token that should be generated
 
@@ -21,7 +21,7 @@ verify.json
 	token: token to be verified
 	ttl_sec: time-to-live in seconds
 	now: current time of the verifying process
-	secret: base64-encoded 32-byte key to use for signing and decryption
+	secret: URL-safe base64-encoded 32-byte key to use for signing and decryption
 	src: unencrypted payload to be retrieved from the token
 
 
@@ -35,4 +35,4 @@ invalid.json
 	token: invalid token
 	ttl_sec: time-to-live in seconds
 	now: current time of the verifying process
-	secret: base64-encoded 32-byte key to use for signing and decryption
+	secret: URL-safe base64-encoded 32-byte key to use for signing and decryption

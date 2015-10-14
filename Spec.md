@@ -60,7 +60,8 @@ This field is a 64-bit unsigned big-endian integer. It records the number of
 seconds elapsed between January 1, 1970 UTC and the time the token was created.
 
 *Changed in version 0x81*: Instead of elapsed seconds, it records the number of
-elapsed microseconds.
+elapsed microseconds. To compute the number of seconds instead, divide the
+value by 1,000,000 and round.
 
 ### IV
 

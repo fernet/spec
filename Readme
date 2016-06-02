@@ -36,3 +36,9 @@ invalid.json
 	ttl_sec: time-to-live in seconds
 	now: current time of the verifying process
 	secret: base64-encoded 32-byte key to use for signing and decryption
+
+generate_192.json, verify_192.json
+generate_256.json, verify_256.json
+
+	equivalent to generate.json and verify.json for 192-bit and 256-bit
+        AES encryption strengths

@@ -16,6 +16,9 @@ All encryption in this version is done with AES 128 in CBC mode.
 All base 64 encoding is done with the "URL and Filename Safe"
 variant, defined in [RFC 4648](http://tools.ietf.org/html/rfc4648#section-5) as "base64url".
 
+Implementations **MUST** implement strict checking of the base64 payload. This means
+rejection of invalid characters as well as additional characters after the padding byte(s).
+
 ## Key Format
 
 A fernet *key* is the base64url encoding of the following
@@ -110,7 +113,8 @@ Given a key and token, to verify that the token is valid and
 recover the original message, perform the following steps, in
 order:
 
-1. base64url decode the token.
+1. base64url decode the token rejecting any token that has invalid
+   characters or bytes after padding.
 2. Ensure the first byte of the token is 0x80.
 3. If the user has specified a maximum age (or "time-to-live") for
 the token, ensure the recorded timestamp is not too far in the
